@@ -1,0 +1,14 @@
+<launch>
+
+    <!-- hesai top -->
+    <include file="$(find hesai_lidar)/launch/hesai_lidar_32_transform.launch">
+    </include>
+
+    <include file="$(find hesai_lidar)/launch/hesai_lidar_16_transform.launch">
+    </include>
+
+
+    <!-- 两个雷达的tf变换 -->
+    <!-- <node name="tf_lidar" pkg="tf" type="static_transform_publisher" args="-0.255638 -0.000158 -0.172875 -0.00435701379 1.16126122 -0.0003110031 /vlp_rear /vlp_top 100" /> -->
+
+</launch>
